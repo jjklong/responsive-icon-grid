@@ -1,9 +1,17 @@
 @import "../../../../bower_components/susy/sass/susy";
+$fa-font-path: "../../../../bower_components/font-awesome/fonts";
+@import "../../../../bower_components/font-awesome/scss/font-awesome";
+
+
+$total-columns: 12;
+$column-width: 4em;
 
 body{
-  background-color: red;
+  background-color: lightblue;
   @include container;
   @include show-grid(overlay);
 }
 
-$total-columns: 12;
+.iconList{
+  list-style: none;
+}
