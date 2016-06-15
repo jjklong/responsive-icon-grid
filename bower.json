@@ -1,0 +1,22 @@
+{
+  "name": "responsive-icon-grid",
+  "homepage": "https://github.com/jjklong/responsive-icon-grid",
+  "authors": [
+    "Jordan Long <jordan.long222@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.0.0",
+    "font-awesome": "fontawesome#^4.6.3",
+    "susy": "^2.2.12"
+  }
+}

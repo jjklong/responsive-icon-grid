@@ -1,0 +1,9 @@
+@import "../../../../bower_components/susy/sass/susy";
+
+body{
+  background-color: red;
+  @include container;
+  @include show-grid(overlay);
+}
+
+$total-columns: 12;

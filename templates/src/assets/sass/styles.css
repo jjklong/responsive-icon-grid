@@ -1,0 +1,11 @@
+body {
+  background-color: red;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  body:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+/*# sourceMappingURL=styles.css.map */
