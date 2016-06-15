@@ -2186,16 +2186,32 @@
   clip: auto; }
 
 body {
-  background-color: lightblue;
-  max-width: 100%;
+  background-color: lightblue; }
+
+.main_container {
+  max-width: 1120px;
   margin-left: auto;
   margin-right: auto; }
-  body:after {
+  .main_container:after {
     content: " ";
     display: block;
     clear: both; }
 
 .iconList {
-  list-style: none; }
+  box-shadow: 1px 2px 5px 0px black;
+  margin: 1em 0;
+  padding: 5em 0;
+  box-sizing: border-box;
+  background: white;
+  text-align: center;
+  list-style: none;
+  width: 31.66667%;
+  float: left;
+  margin-left: 0.83333%;
+  margin-right: 0.83333%; }
+
+.fa {
+  border-bottom: .1em solid black;
+  padding-bottom: .5em; }
 
 /*# sourceMappingURL=styles.css.map */

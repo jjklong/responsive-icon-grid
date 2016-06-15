@@ -2,16 +2,33 @@
 $fa-font-path: "../../../../bower_components/font-awesome/fonts";
 @import "../../../../bower_components/font-awesome/scss/font-awesome";
 
-
-$total-columns: 12;
-$column-width: 4em;
+$susy: (
+  columns: 12,
+  container: 1120px,
+  gutter-position: split,
+  global-box-sizing: border-box
+  );
 
 body{
   background-color: lightblue;
+}
+
+.main_container{
   @include container;
-  @include show-grid(overlay);
 }
 
 .iconList{
+  box-shadow: 1px 2px 5px 0px black;
+  margin: 1em 0;
+  padding: 5em 0;
+  box-sizing: border-box;
+  background: white;
+  text-align: center;
   list-style: none;
+  @include span(4);
+}
+
+.fa{
+  border-bottom: .1em solid black;
+  padding-bottom: .5em;
 }
