@@ -2186,7 +2186,6 @@
   clip: auto; }
 
 body {
-  color: lightblue;
   background-color: lightblue;
   font-family: sans-serif; }
 
@@ -2200,6 +2199,7 @@ body {
     clear: both; }
 
 .iconList {
+  color: lightblue;
   box-shadow: 1px 2px 5px 0px black;
   position: relative;
   margin: 1em 0;
@@ -2223,6 +2223,7 @@ body {
   padding: 1em 0; }
 
 .h4title {
+  color: white;
   bottom: 1em;
   right: 50%;
   font-size: 1em;

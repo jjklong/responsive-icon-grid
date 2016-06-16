@@ -19,38 +19,46 @@ var hover = 'white';
 //.animate({spead, easing, complete})
 
 $('.iconList').hover( function onhover() {            //on hover
-  $('.fa').animate({'padding-bottom': '1em'}, 500)    //move border down
+  $(this).find('.fa').animate({'padding-bottom': '1em'}, 500)    //move border down
             .css('color', hover)                      //change fa color
             .css('border-color', hover);              //change border color
-  $(this).css('background-color', color)              //change background , this = .iconList
-      .next($('.h2title').animate({
+  $(this).css('background-color', color)  ;            //change background , this = .iconList
+  $(this).find('.h2title').animate({
                             top: '3em'
                           }, 500)
-                          .css('color', hover)
-            );
+                          .css('color', hover);
+  $(this).find('.h4title').animate({
+                        bottom: '2em'
+                      }, 500)
+                      .css('color', hover);
+
 }, function offhover() {
-  $('.fa').animate({'padding-bottom': '.5em'}, 500)
+  $(this).find('.fa').animate({'padding-bottom': '.5em'}, 500)
           .css('color', color)
           .css('border-color', color);
-  $(this).css('background-color', hover)
-  .next($('.h2title').animate({
+  $(this).css('background-color', hover);
+  $(this).find($('.h2title').animate({
                 top: '5em'
               }, 500)
             .css('color', color));
+  $(this).find('.h4title').animate({
+                        bottom: '1em'
+                      }, 500)
+                      .css('color', hover);
 });
 
 
-  $('.iconList').hover( function onhover(){
-    $('.h4title').animate({
-                          bottom: '2em'
-                        }, 500)
-                        .css('color', hover);
-  }, function offhover() {
-    $('.h4title').animate({
-                          bottom: '1em'
-                        }, 500)
-                        .css('color', color);
-  });
+  // $('.iconList').hover( function onhover(){
+  //   $('.h4title').animate({
+  //                         bottom: '2em'
+  //                       }, 500)
+  //                       .css('color', hover);
+  // }, function offhover() {
+  //   $('.h4title').animate({
+  //                         bottom: '1em'
+  //                       }, 500)
+  //                       .css('color', color);
+  // });
 
 
 
