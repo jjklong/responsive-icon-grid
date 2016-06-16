@@ -10,7 +10,9 @@ $susy: (
   );
 
 body{
+  color: lightblue;
   background-color: lightblue;
+  font-family: sans-serif;
 }
 
 .main_container{
@@ -19,17 +21,49 @@ body{
 
 .iconList{
   box-shadow: 1px 2px 5px 0px black;
+  position: relative;
   margin: 1em 0;
-  padding: 5em 0;
+  padding: 4em 0 8em 0;
   box-sizing: border-box;
-  border-bottom: .1em solid black;
   background: white;
   text-align: center;
   list-style: none;
-  @include span(4);
 }
 
 .fa{
-  border-bottom: .1em solid black;
+  margin: 0 .5em;
+  display: block;
+  border-bottom: .1em solid lightblue;
   padding-bottom: .5em;
+}
+
+.h2title{
+  font-size: 2em;
+  position: absolute;
+  left: 50%;
+  top: 5em;
+  padding: 1em 0;
+}
+
+.h4title{
+  bottom: 1em;
+  right: 50%;
+  font-size: 1em;
+  position: absolute;
+}
+
+@media (min-width: 1121px) {
+  .iconList{
+    @include span(4);
+  }
+}
+@media (min-width:768px) and (max-width: 1120px) {
+  .iconList{
+    @include span(6);
+  }
+}
+@media (max-width: 767px) {
+  .iconList{
+    width: 80%;
+  }
 }

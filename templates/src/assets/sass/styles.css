@@ -2186,7 +2186,9 @@
   clip: auto; }
 
 body {
-  background-color: lightblue; }
+  color: lightblue;
+  background-color: lightblue;
+  font-family: sans-serif; }
 
 .main_container {
   max-width: 1120px;
@@ -2199,20 +2201,47 @@ body {
 
 .iconList {
   box-shadow: 1px 2px 5px 0px black;
+  position: relative;
   margin: 1em 0;
-  padding: 5em 0;
+  padding: 4em 0 8em 0;
   box-sizing: border-box;
-  border-bottom: .1em solid black;
   background: white;
   text-align: center;
-  list-style: none;
-  width: 31.66667%;
-  float: left;
-  margin-left: 0.83333%;
-  margin-right: 0.83333%; }
+  list-style: none; }
 
 .fa {
-  border-bottom: .1em solid black;
+  margin: 0 .5em;
+  display: block;
+  border-bottom: .1em solid lightblue;
   padding-bottom: .5em; }
+
+.h2title {
+  font-size: 2em;
+  position: absolute;
+  left: 50%;
+  top: 5em;
+  padding: 1em 0; }
+
+.h4title {
+  bottom: 1em;
+  right: 50%;
+  font-size: 1em;
+  position: absolute; }
+
+@media (min-width: 1121px) {
+  .iconList {
+    width: 31.66667%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%; } }
+@media (min-width: 768px) and (max-width: 1120px) {
+  .iconList {
+    width: 48.33333%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%; } }
+@media (max-width: 767px) {
+  .iconList {
+    width: 80%; } }
 
 /*# sourceMappingURL=styles.css.map */
